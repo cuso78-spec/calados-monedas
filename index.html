@@ -39,249 +39,7 @@
       }
     }
   </script>
-<style data-purpose="base-typography">
-    body {
-      background-color: #0d0c0b;
-      color: #e2ded9;
-      font-family: 'Plus Jakarta Sans', sans-serif;
-      -webkit-font-smoothing: antialiased;
-      selection-background-color: #d4af37;
-      selection-color: #121110;
-    }
-    ::selection {
-      background: #d4af37;
-      color: #121110;
-    }
-  </style>
-<style data-purpose="custom-accents">
-    /* Subtle metallic golden border gradient */
-    .gold-border-gradient {
-      border-image: linear-gradient(to bottom, #d4af37, rgba(212, 175, 55, 0.15)) 1;
-    }
-    /* Delicate ambient gold shadow */
-    .glow-gold {
-      box-shadow: 0 0 25px -4px rgba(212, 175, 55, 0.22);
-    }
-    /* Pattern overlay for artisanal luxury depth */
-    .bg-patron {
-      background-image: radial-gradient(rgba(212, 175, 55, 0.05) 1px, transparent 0);
-      background-size: 20px 20px;
-    }
-  </style>
-</head>
-<body class="bg-noir-950 text-[#e2ded9] flex justify-center min-h-screen">
-<!-- Mobile Wrapper Container (Optimized for iOS / 390px - 430px) -->
-<div class="w-full max-w-[440px] bg-noir-900 border-x border-[#262320] shadow-2xl relative flex flex-col">
-<!-- BEGIN: MainHeader -->
-<header class="sticky top-0 z-50 bg-noir-950/90 backdrop-blur-md border-b border-[#2a2622] px-4 py-3" data-purpose="site-navigation-bar">
-<div class="flex items-center justify-between">
-<!-- Logo Brand Group -->
-<a class="flex items-center gap-2.5 group" href="#inicio">
-<img alt="Emblema Monedas Caladas" class="w-10 h-10 rounded-full object-cover border border-oro/60 shadow-md group-hover:scale-105 transition-transform duration-300" src="assets/portada.jpg"/>
-<div class="flex flex-col">
-<span class="font-serif font-bold text-lg leading-tight tracking-wider text-oro-glow uppercase">Monedas Caladas</span>
-<span class="text-[9px] uppercase tracking-widest text-[#9d968d]">Taller de Calado Fino</span>
-</div>
-</a>
-<!-- Fast WhatsApp Anchor -->
-<a aria-label="Contactar por WhatsApp" class="flex items-center gap-1.5 px-3 py-2 rounded-full bg-[#25D366] text-noir-950 hover:bg-[#20ba59] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#25D366] transition-colors" href="https://wa.me/56967202358" rel="noopener noreferrer" target="_blank">
-<svg class="w-4 h-4 fill-current" viewbox="0 0 24 24">
-<path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"></path>
-</svg>
-<span class="text-[11px] font-bold">WhatsApp</span>
-</a>
-</div>
-<!-- Compact Minimalist Anchor Navigation -->
-<nav aria-label="Menú principal" class="mt-2.5 pt-2 border-t border-[#221f1c] flex items-center justify-between text-[11px] font-medium tracking-wider text-[#9d968d]">
-<a class="hover:text-oro-glow transition-colors" href="#inicio">01 Inicio</a>
-<span class="text-[#3b3631]">·</span>
-<a class="hover:text-oro-glow transition-colors" href="#galeria">02 Galería</a>
-<span class="text-[#3b3631]">·</span>
-<a class="hover:text-oro-glow transition-colors" href="#artesano">03 Artesano</a>
-<span class="text-[#3b3631]">·</span>
-<a class="hover:text-oro-glow transition-colors" href="#contacto">04 Contacto</a>
-</nav>
-</header>
-<!-- END: MainHeader -->
-<!-- BEGIN: MainContent -->
-<main class="flex-grow">
-<!-- BEGIN: SectionHero -->
-<section class="relative px-5 pt-8 pb-12 overflow-hidden bg-patron" data-purpose="hero-section" id="inicio">
-<!-- Floating atmospheric ambient background -->
-<div class="absolute -top-10 -right-10 w-48 h-48 bg-oro/10 rounded-full blur-3xl pointer-events-none"></div>
-<!-- Overline Tag -->
-<div class="flex items-center gap-2 mb-3">
-<span class="w-6 h-[1px] bg-oro"></span>
-<p class="text-[11px] uppercase tracking-[0.25em] text-oro-glow font-semibold">El Arte de la Substracción</p>
-</div>
-<!-- Main Title -->
-<h1 class="font-serif text-4xl font-bold tracking-tight text-white leading-[1.08] mb-4">
-          Monedas <span class="italic font-normal text-oro">Caladas</span>
-</h1>
-<!-- Poetic Exact Copy -->
-<blockquote class="text-[13.5px] leading-relaxed text-[#c7c0b6] italic border-l-2 border-oro/40 pl-3.5 mb-6">
-          "No añado material. Lo retiro. Con una sierra de joyero y la paciencia de las horas lentas, vacío monedas, maderas y metales hasta que la luz atraviesa lo que antes era macizo."
-        </blockquote>
-<!-- Featured Piece Card -->
-<div class="relative bg-noir-850 border border-[#2b2723] rounded-xl p-3 mb-6 glow-gold" data-purpose="hero-featured-card">
-<div class="relative aspect-square w-full rounded-lg overflow-hidden bg-[#000]">
-<img alt="Dije calado en moneda Sol de Mayo" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" src="assets/IMG_20260817_221319.jpg"/>
-<div class="absolute inset-0 bg-gradient-to-t from-noir-950 via-transparent to-transparent opacity-80"></div>
-<!-- Technical Tag on Image -->
-<div class="absolute bottom-2.5 left-2.5 right-2.5 flex items-center justify-between text-[11px] text-white">
-<span class="bg-noir-950/80 backdrop-blur-md px-2 py-0.5 rounded border border-oro/30 font-serif tracking-wider text-oro-glow">N° 001 — Macro</span>
-<span class="text-[10px] text-[#ddd6cc] bg-black/60 px-2 py-0.5 rounded">Sol de Mayo · Calado a mano</span>
-</div>
-</div>
-</div>
-<!-- Materials Tag Badges -->
-<div class="space-y-2 mb-6 text-xs">
-<div class="flex items-center justify-between p-2 rounded bg-noir-800/60 border border-[#282522]">
-<span class="font-medium text-oro-light flex items-center gap-1.5">
-<span class="w-1.5 h-1.5 rounded-full bg-oro"></span> Monedas
-            </span>
-<span class="text-[#a59e95]">Plata · Cobre</span>
-</div>
-<div class="flex items-center justify-between p-2 rounded bg-noir-800/60 border border-[#282522]">
-<span class="font-medium text-oro-light flex items-center gap-1.5">
-<span class="w-1.5 h-1.5 rounded-full bg-bronce"></span> Madera
-            </span>
-<span class="text-[#a59e95]">Nogal · Arce</span>
-</div>
-<div class="flex items-center justify-between p-2 rounded bg-noir-800/60 border border-[#282522]">
-<span class="font-medium text-oro-light flex items-center gap-1.5">
-<span class="w-1.5 h-1.5 rounded-full bg-plata"></span> Metal
-            </span>
-<span class="text-[#a59e95]">Latón · Acero</span>
-</div>
-</div>
-<!-- Action CTA Buttons -->
-<div class="grid grid-cols-2 gap-3" data-purpose="hero-actions">
-<a class="text-center py-3 px-4 rounded-lg bg-oro hover:bg-oro-glow text-noir-950 font-semibold text-xs tracking-wider uppercase transition-all duration-200 shadow-md active:scale-95" href="#galeria">
-            Ver la Galería
-          </a>
-<a class="text-center py-3 px-4 rounded-lg bg-noir-800 hover:bg-noir-700 text-oro border border-oro/40 font-medium text-xs tracking-wider uppercase transition-all duration-200 active:scale-95" href="#contacto">
-            Encargar Pieza
-          </a>
-</div>
-</section>
-<!-- END: SectionHero -->
-<!-- BEGIN: SectionGallery -->
-<section class="px-5 py-12 border-t border-[#26221e] bg-noir-900" data-purpose="gallery-section" id="galeria">
-<!-- Section Header -->
-<div class="mb-5">
-<p class="text-[11px] font-semibold tracking-[0.2em] text-oro uppercase mb-1">02 — Galería</p>
-<h2 class="font-serif text-2xl md:text-3xl font-bold text-white leading-tight">
-            Obras donde el vacío es la obra
-          </h2>
-<p class="text-xs text-[#a9a298] mt-2 leading-relaxed">
-            Cada pieza se corta a mano, una hoja a la vez, sin plantillas digitales. Lo que ves es lo que queda cuando la materia se rinde al diseño.
-          </p>
-</div>
-<!-- Interactive Filter Chips -->
-<div class="flex items-center gap-2 mb-6 overflow-x-auto pb-1 no-scrollbar text-xs" data-purpose="gallery-filters">
-<button class="filter-btn active-tab px-3.5 py-1.5 rounded-full bg-oro text-noir-950 font-semibold transition-all duration-200 shrink-0" aria-pressed="true" id="tab-todos" onclick="filterGallery('todos')" type="button">
-            Todos
-          </button>
-<button class="filter-btn px-3.5 py-1.5 rounded-full bg-noir-850 text-[#b5ada3] border border-[#302c27] hover:border-oro/50 transition-all duration-200 shrink-0" aria-pressed="false" id="tab-monedas" onclick="filterGallery('monedas')" type="button">
-            01 Monedas
-          </button>
-<button class="filter-btn px-3.5 py-1.5 rounded-full bg-noir-850 text-[#b5ada3] border border-[#302c27] hover:border-oro/50 transition-all duration-200 shrink-0" aria-pressed="false" id="tab-madera" onclick="filterGallery('madera')" type="button">
-            02 Madera
-          </button>
-<button class="filter-btn px-3.5 py-1.5 rounded-full bg-noir-850 text-[#b5ada3] border border-[#302c27] hover:border-oro/50 transition-all duration-200 shrink-0" aria-pressed="false" id="tab-metal" onclick="filterGallery('metal')" type="button">
-            03 Metal
-          </button>
-</div>
-<!-- Gallery Grid -->
-<div class="space-y-5" id="gallery-container">
-<article class="gallery-card group bg-noir-850 border border-[#2c2824] rounded-xl overflow-hidden shadow-lg transition-transform duration-300" data-category="monedas metal">
-<div class="relative aspect-square w-full overflow-hidden bg-noir-950">
-<a class="block w-full h-full focus-visible:outline focus-visible:outline-2 focus-visible:outline-oro focus-visible:outline-offset-[-2px]" href="assets/IMG_20260817_221319.jpg" target="_blank" rel="noopener noreferrer" aria-label="Ver fotografía completa: Sol de Mayo">
-<img alt="Dije con un sol calado y cordón sobre fondo rojo." class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" src="assets/IMG_20260817_221319.jpg" loading="lazy" decoding="async" width="1400" height="1400"/>
-</a>
-<span class="absolute top-3 left-3 pointer-events-none bg-noir-950/85 backdrop-blur-sm text-[10px] text-oro px-2.5 py-1 rounded border border-oro/30 font-medium">Monedas</span>
-</div>
-<div class="p-4">
-<h3 class="font-serif text-lg font-bold text-white tracking-wide mb-1">Sol de Mayo</h3>
-<p class="text-xs text-[#a39c92]">Dije con un sol calado y cordón sobre fondo rojo.</p>
-</div>
-</article>
-<article class="gallery-card group bg-noir-850 border border-[#2c2824] rounded-xl overflow-hidden shadow-lg transition-transform duration-300" data-category="monedas metal">
-<div class="relative aspect-square w-full overflow-hidden bg-noir-950">
-<a class="block w-full h-full focus-visible:outline focus-visible:outline-2 focus-visible:outline-oro focus-visible:outline-offset-[-2px]" href="assets/moneda1.jpg" target="_blank" rel="noopener noreferrer" aria-label="Ver fotografía completa: Figura con lanza">
-<img alt="Colgante de moneda calada con una figura y lanza." class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" src="assets/moneda1.jpg" loading="lazy" decoding="async" width="1400" height="1400"/>
-</a>
-<span class="absolute top-3 left-3 pointer-events-none bg-noir-950/85 backdrop-blur-sm text-[10px] text-oro px-2.5 py-1 rounded border border-oro/30 font-medium">Monedas</span>
-</div>
-<div class="p-4">
-<h3 class="font-serif text-lg font-bold text-white tracking-wide mb-1">Figura con lanza</h3>
-<p class="text-xs text-[#a39c92]">Colgante de moneda calada con una figura y lanza.</p>
-</div>
-</article>
-<article class="gallery-card group bg-noir-850 border border-[#2c2824] rounded-xl overflow-hidden shadow-lg transition-transform duration-300" data-category="monedas metal">
-<div class="relative aspect-square w-full overflow-hidden bg-noir-950">
-<a class="block w-full h-full focus-visible:outline focus-visible:outline-2 focus-visible:outline-oro focus-visible:outline-offset-[-2px]" href="assets/moneda2.jpg" target="_blank" rel="noopener noreferrer" aria-label="Ver fotografía completa: Águila calada">
-<img alt="Dije con un águila de alas extendidas, calada a mano." class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" src="assets/moneda2.jpg" loading="lazy" decoding="async" width="1400" height="1400"/>
-</a>
-<span class="absolute top-3 left-3 pointer-events-none bg-noir-950/85 backdrop-blur-sm text-[10px] text-oro px-2.5 py-1 rounded border border-oro/30 font-medium">Monedas</span>
-</div>
-<div class="p-4">
-<h3 class="font-serif text-lg font-bold text-white tracking-wide mb-1">Águila calada</h3>
-<p class="text-xs text-[#a39c92]">Dije con un águila de alas extendidas, calada a mano.</p>
-</div>
-</article>
-<article class="gallery-card group bg-noir-850 border border-[#2c2824] rounded-xl overflow-hidden shadow-lg transition-transform duration-300" data-category="monedas metal">
-<div class="relative aspect-square w-full overflow-hidden bg-noir-950">
-<a class="block w-full h-full focus-visible:outline focus-visible:outline-2 focus-visible:outline-oro focus-visible:outline-offset-[-2px]" href="assets/moneda3.jpg" target="_blank" rel="noopener noreferrer" aria-label="Ver fotografía completa: Calendario en moneda">
-<img alt="Moneda con motivo de calendario y contorno calado." class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" src="assets/moneda3.jpg" loading="lazy" decoding="async" width="1400" height="1400"/>
-</a>
-<span class="absolute top-3 left-3 pointer-events-none bg-noir-950/85 backdrop-blur-sm text-[10px] text-oro px-2.5 py-1 rounded border border-oro/30 font-medium">Monedas</span>
-</div>
-<div class="p-4">
-<h3 class="font-serif text-lg font-bold text-white tracking-wide mb-1">Calendario en moneda</h3>
-<p class="text-xs text-[#a39c92]">Moneda con motivo de calendario y contorno calado.</p>
-</div>
-</article>
-<article class="gallery-card group bg-noir-850 border border-[#2c2824] rounded-xl overflow-hidden shadow-lg transition-transform duration-300" data-category="monedas metal">
-<div class="relative aspect-square w-full overflow-hidden bg-noir-950">
-<a class="block w-full h-full focus-visible:outline focus-visible:outline-2 focus-visible:outline-oro focus-visible:outline-offset-[-2px]" href="assets/moneda5.jpg" target="_blank" rel="noopener noreferrer" aria-label="Ver fotografía completa: Retrato con cadena">
-<img alt="Colgante de moneda con retrato y cadena dorada." class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" src="assets/moneda5.jpg" loading="lazy" decoding="async" width="1400" height="1400"/>
-</a>
-<span class="absolute top-3 left-3 pointer-events-none bg-noir-950/85 backdrop-blur-sm text-[10px] text-oro px-2.5 py-1 rounded border border-oro/30 font-medium">Monedas</span>
-</div>
-<div class="p-4">
-<h3 class="font-serif text-lg font-bold text-white tracking-wide mb-1">Retrato con cadena</h3>
-<p class="text-xs text-[#a39c92]">Colgante de moneda con retrato y cadena dorada.</p>
-</div>
-</article>
-<article class="gallery-card group bg-noir-850 border border-[#2c2824] rounded-xl overflow-hidden shadow-lg transition-transform duration-300" data-category="monedas metal">
-<div class="relative aspect-square w-full overflow-hidden bg-noir-950">
-<a class="block w-full h-full focus-visible:outline focus-visible:outline-2 focus-visible:outline-oro focus-visible:outline-offset-[-2px]" href="assets/moneda12.jpeg" target="_blank" rel="noopener noreferrer" aria-label="Ver fotografía completa: Detalle del calado">
-<img alt="Figura de ave calada junto a una moneda sobre fondo oscuro." class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" src="assets/moneda12.jpeg" loading="lazy" decoding="async" width="1400" height="1400"/>
-</a>
-<span class="absolute top-3 left-3 pointer-events-none bg-noir-950/85 backdrop-blur-sm text-[10px] text-oro px-2.5 py-1 rounded border border-oro/30 font-medium">Monedas</span>
-</div>
-<div class="p-4">
-<h3 class="font-serif text-lg font-bold text-white tracking-wide mb-1">Detalle del calado</h3>
-<p class="text-xs text-[#a39c92]">Figura de ave calada junto a una moneda sobre fondo oscuro.</p>
-</div>
-</article>
-<article class="gallery-card group bg-noir-850 border border-[#2c2824] rounded-xl overflow-hidden shadow-lg transition-transform duration-300" data-category="monedas metal">
-<div class="relative aspect-square w-full overflow-hidden bg-noir-950">
-<a class="block w-full h-full focus-visible:outline focus-visible:outline-2 focus-visible:outline-oro focus-visible:outline-offset-[-2px]" href="assets/moneda14.jpg" target="_blank" rel="noopener noreferrer" aria-label="Ver fotografía completa: Monedas y cadena">
-<img alt="Dos dijes de monedas acompañados de una cadena." class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" src="assets/moneda14.jpg" loading="lazy" decoding="async" width="1400" height="1400"/>
-</a>
-<span class="absolute top-3 left-3 pointer-events-none bg-noir-950/85 backdrop-blur-sm text-[10px] text-oro px-2.5 py-1 rounded border border-oro/30 font-medium">Monedas</span>
-</div>
-<div class="p-4">
-<h3 class="font-serif text-lg font-bold text-white tracking-wide mb-1">Monedas y cadena</h3>
-<p class="text-xs text-[#a39c92]">Dos dijes de monedas acompañados de una cadena.</p>
-</div>
-</article>
-<article class="gallery-card group bg-noir-850 border border-[#2c2824] rounded-xl overflow-hidden shadow-lg transition-transform duration-300" data-category="monedas metal">
-<div class="relative aspect-square w-full overflow-hidden bg-noir-950">
-<a class="block w-full h-full focus-visible:outline focus-visible:outline-2 focus-visible:outline-oro focus-visible:outline-offset-[-2px]" href="assets/moneda15.j<!DOCTYPE html>
+<style data-purpose="base-typography"><!DOCTYPE html>
 
 <html class="scroll-smooth" lang="es"><head>
 <meta charset="utf-8"/>
@@ -360,18 +118,17 @@
 <div class="flex items-center justify-between">
 <!-- Logo Brand Group -->
 <a class="flex items-center gap-2.5 group" href="#inicio">
-<img alt="Emblema Monedas Caladas" class="w-10 h-10 rounded-full object-cover border border-oro/60 shadow-md group-hover:scale-105 transition-transform duration-300" src="recursos/portada.jpg"/>
+<img alt="Emblema Monedas Caladas" class="w-10 h-10 rounded-full object-cover border border-oro/60 shadow-md group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqNXjxCiqJ67hQpbvfI-p_DGllzJXBbuVl1_rQsb5d7JxvTzlTaf2XPhnX8wVij03C07lxtjdxR34vqFN569cf7J3YDnEfD9t_1qtfyp46wf5S0fuHmoXZp8hqCKqVC0Fth2XY8eXhwhxgczs4FX1ZG_YthwVW-vu9pzBmTDeAtpFd0tmp0cBpNUy4YyzWhG8NLQQ04gdZZRyvbTaS_HsTSwg80L-wjpRMYS-Aqbv_n95k3vhDzlGhH8F2IRt3muoRmQ"/>
 <div class="flex flex-col">
 <span class="font-serif font-bold text-lg leading-tight tracking-wider text-oro-glow uppercase">Monedas Caladas</span>
 <span class="text-[9px] uppercase tracking-widest text-[#9d968d]">Taller de Calado Fino</span>
 </div>
 </a>
 <!-- Fast WhatsApp Anchor -->
-<a aria-label="Contactar por WhatsApp" class="flex items-center gap-1.5 px-3 py-2 rounded-full bg-[#25D366] text-noir-950 hover:bg-[#20ba59] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#25D366] transition-colors" href="https://wa.me/56967202358" rel="noopener noreferrer" target="_blank">
+<a aria-label="Contactar por WhatsApp" class="p-2 rounded-full border border-oro/40 bg-noir-850 text-oro hover:bg-oro hover:text-noir-950 transition-colors" href="https://wa.me/56967292358" rel="noopener noreferrer" target="_blank">
 <svg class="w-4 h-4 fill-current" viewbox="0 0 24 24">
 <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"></path>
 </svg>
-<span class="text-[11px] font-bold">WhatsApp</span>
 </a>
 </div>
 <!-- Compact Minimalist Anchor Navigation -->
@@ -408,12 +165,12 @@
 <!-- Featured Piece Card -->
 <div class="relative bg-noir-850 border border-[#2b2723] rounded-xl p-3 mb-6 glow-gold" data-purpose="hero-featured-card">
 <div class="relative aspect-square w-full rounded-lg overflow-hidden bg-[#000]">
-<img alt="Dije calado en moneda Sol de Mayo" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" src="assets/IMG_20260817_221319.jpg"/>
+<img alt="Dije calado en moneda Sol de Mayo" class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWN2-17-sNcjNyAjQZeYFQFOIT0iti2MYWptXIZvktZwni86017tYgQX0K3oRnutRZerTvyHr9BoseA9HavjqMPezfy2lH8zFy-lsb7I7t5iFS17xVkuFIftUwQE81UqfYFuejJyUWpCLG1eQyz-RLv4pXWebZwtSo-vHNxLA0gnRqNXAa2-4GjcJWThqQbZw-Vmv4_rdD3P5Tn2lsQkD7N1biA0RFUlML9XJiZuNP062vmXgDJ7L_3wAXXrKYT8AYSA"/>
 <div class="absolute inset-0 bg-gradient-to-t from-noir-950 via-transparent to-transparent opacity-80"></div>
 <!-- Technical Tag on Image -->
 <div class="absolute bottom-2.5 left-2.5 right-2.5 flex items-center justify-between text-[11px] text-white">
 <span class="bg-noir-950/80 backdrop-blur-md px-2 py-0.5 rounded border border-oro/30 font-serif tracking-wider text-oro-glow">N° 001 — Macro</span>
-<span class="text-[10px] text-[#ddd6cc] bg-black/60 px-2 py-0.5 rounded">Sol de Mayo · Calado a mano</span>
+<span class="text-[10px] text-[#ddd6cc] bg-black/60 px-2 py-0.5 rounded">Plata · Sierra 4/0</span>
 </div>
 </div>
 </div>
@@ -463,118 +220,91 @@
 </div>
 <!-- Interactive Filter Chips -->
 <div class="flex items-center gap-2 mb-6 overflow-x-auto pb-1 no-scrollbar text-xs" data-purpose="gallery-filters">
-<button class="filter-btn active-tab px-3.5 py-1.5 rounded-full bg-oro text-noir-950 font-semibold transition-all duration-200 shrink-0" aria-pressed="true" id="tab-todos" onclick="filterGallery('todos')" type="button">
+<button class="filter-btn active-tab px-3.5 py-1.5 rounded-full bg-oro text-noir-950 font-semibold transition-all duration-200 shrink-0" id="tab-todos" onclick="filterGallery('todos')" type="button">
             Todos
           </button>
-<button class="filter-btn px-3.5 py-1.5 rounded-full bg-noir-850 text-[#b5ada3] border border-[#302c27] hover:border-oro/50 transition-all duration-200 shrink-0" aria-pressed="false" id="tab-monedas" onclick="filterGallery('monedas')" type="button">
+<button class="filter-btn px-3.5 py-1.5 rounded-full bg-noir-850 text-[#b5ada3] border border-[#302c27] hover:border-oro/50 transition-all duration-200 shrink-0" id="tab-monedas" onclick="filterGallery('monedas')" type="button">
             01 Monedas
           </button>
-<button class="filter-btn px-3.5 py-1.5 rounded-full bg-noir-850 text-[#b5ada3] border border-[#302c27] hover:border-oro/50 transition-all duration-200 shrink-0" aria-pressed="false" id="tab-madera" onclick="filterGallery('madera')" type="button">
+<button class="filter-btn px-3.5 py-1.5 rounded-full bg-noir-850 text-[#b5ada3] border border-[#302c27] hover:border-oro/50 transition-all duration-200 shrink-0" id="tab-madera" onclick="filterGallery('madera')" type="button">
             02 Madera
           </button>
-<button class="filter-btn px-3.5 py-1.5 rounded-full bg-noir-850 text-[#b5ada3] border border-[#302c27] hover:border-oro/50 transition-all duration-200 shrink-0" aria-pressed="false" id="tab-metal" onclick="filterGallery('metal')" type="button">
+<button class="filter-btn px-3.5 py-1.5 rounded-full bg-noir-850 text-[#b5ada3] border border-[#302c27] hover:border-oro/50 transition-all duration-200 shrink-0" id="tab-metal" onclick="filterGallery('metal')" type="button">
             03 Metal
           </button>
 </div>
 <!-- Gallery Grid -->
 <div class="space-y-5" id="gallery-container">
-<article class="gallery-card group bg-noir-850 border border-[#2c2824] rounded-xl overflow-hidden shadow-lg transition-transform duration-300" data-category="monedas metal">
-<div class="relative aspect-square w-full overflow-hidden bg-noir-950">
-<a class="block w-full h-full focus-visible:outline focus-visible:outline-2 focus-visible:outline-oro focus-visible:outline-offset-[-2px]" href="assets/IMG_20260817_221319.jpg" target="_blank" rel="noopener noreferrer" aria-label="Ver fotografía completa: Sol de Mayo">
-<img alt="Dije con un sol calado y cordón sobre fondo rojo." class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" src="assets/IMG_20260817_221319.jpg" loading="lazy" decoding="async" width="1400" height="1400"/>
-</a>
-<span class="absolute top-3 left-3 pointer-events-none bg-noir-950/85 backdrop-blur-sm text-[10px] text-oro px-2.5 py-1 rounded border border-oro/30 font-medium">Monedas</span>
+<!-- Piece 1: Encaje Real -->
+<article class="gallery-card group bg-noir-850 border border-[#2c2824] rounded-xl overflow-hidden shadow-lg transition-transform duration-300" data-category="monedas">
+<div class="relative aspect-square w-full overflow-hidden bg-black/40">
+<img alt="Obra Encaje Real - Moneda Calada Pueblos Originarios" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCchpvHg1Oag1AfMDr3_M_5ImS79wA4ua7vMB62976cM40TqNc-PTDwMRROscgm7HNZ0k0iAEjWiar5FPwBVLLYzhBtYz1Ur2WEeKwTbUyiZ5iEdfMCI9BizOr60paaTRVAOUtqfWrFc8g--i6N63dH0eekQ9RPE_YqCVTZFPFL-s01oj_GMom8KJsq_q1PDAS9PPPTxglxZQRmI5xJ92DbSTrw_KplrwpGDYPTawnk_RPJWVJItyD-HKd0-Mgx4OCYpA"/>
+<span class="absolute top-3 left-3 bg-noir-950/85 backdrop-blur-sm text-[10px] text-oro px-2.5 py-1 rounded border border-oro/30 font-medium">Monedas</span>
 </div>
 <div class="p-4">
-<h3 class="font-serif text-lg font-bold text-white tracking-wide mb-1">Sol de Mayo</h3>
-<p class="text-xs text-[#a39c92]">Dije con un sol calado y cordón sobre fondo rojo.</p>
+<div class="flex items-start justify-between gap-2 mb-1">
+<h3 class="font-serif text-lg font-bold text-white tracking-wide">Encaje Real</h3>
+<span class="text-xs font-serif text-oro tracking-widest">42h corte</span>
+</div>
+<p class="text-xs text-[#a39c92]">Plata bimetálica · Calado retrato Pueblos Originarios · Diámetro 38mm</p>
 </div>
 </article>
-<article class="gallery-card group bg-noir-850 border border-[#2c2824] rounded-xl overflow-hidden shadow-lg transition-transform duration-300" data-category="monedas metal">
-<div class="relative aspect-square w-full overflow-hidden bg-noir-950">
-<a class="block w-full h-full focus-visible:outline focus-visible:outline-2 focus-visible:outline-oro focus-visible:outline-offset-[-2px]" href="assets/moneda1.jpg" target="_blank" rel="noopener noreferrer" aria-label="Ver fotografía completa: Figura con lanza">
-<img alt="Colgante de moneda calada con una figura y lanza." class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" src="assets/moneda1.jpg" loading="lazy" decoding="async" width="1400" height="1400"/>
-</a>
-<span class="absolute top-3 left-3 pointer-events-none bg-noir-950/85 backdrop-blur-sm text-[10px] text-oro px-2.5 py-1 rounded border border-oro/30 font-medium">Monedas</span>
+<!-- Piece 2: Lautaro Libertador -->
+<article class="gallery-card group bg-noir-850 border border-[#2c2824] rounded-xl overflow-hidden shadow-lg transition-transform duration-300" data-category="monedas">
+<div class="relative aspect-square w-full overflow-hidden bg-black/40">
+<img alt="Obra Lautaro Libertador - Moneda Calada a caballo" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgfyGYcrTfk3umpH_uETIpDQlWMAFJoyOqT1Jgm2VEYhrRA_-QicjCwyeX8rgC7GBbtlb6vKCwgaKLBvX5r-7SFZU-OKbObKemeu3hgyLYO3JES0Kn8Xn0xE682RL2BFEmRd8LUuVNy6Xp6o7QlmVXgp9JmlshR3bYqF5i2aMM7UBeD9ReA_zxRWAg92BXuT-LBuGeudWzlpBZlUATl0tJqVS0L07pVOxSmc7SqlYVYLz7gu_BAfk3CCDrv5NFXX81pA"/>
+<span class="absolute top-3 left-3 bg-noir-950/85 backdrop-blur-sm text-[10px] text-oro px-2.5 py-1 rounded border border-oro/30 font-medium">Monedas</span>
 </div>
 <div class="p-4">
-<h3 class="font-serif text-lg font-bold text-white tracking-wide mb-1">Figura con lanza</h3>
-<p class="text-xs text-[#a39c92]">Colgante de moneda calada con una figura y lanza.</p>
+<div class="flex items-start justify-between gap-2 mb-1">
+<h3 class="font-serif text-lg font-bold text-white tracking-wide">Lautaro Libertador</h3>
+<span class="text-xs font-serif text-oro tracking-widest">38h corte</span>
+</div>
+<p class="text-xs text-[#a39c92]">Latón dorado · Figura ecuestre calada con lanza · Diámetro 32mm</p>
 </div>
 </article>
-<article class="gallery-card group bg-noir-850 border border-[#2c2824] rounded-xl overflow-hidden shadow-lg transition-transform duration-300" data-category="monedas metal">
-<div class="relative aspect-square w-full overflow-hidden bg-noir-950">
-<a class="block w-full h-full focus-visible:outline focus-visible:outline-2 focus-visible:outline-oro focus-visible:outline-offset-[-2px]" href="assets/moneda2.jpg" target="_blank" rel="noopener noreferrer" aria-label="Ver fotografía completa: Águila calada">
-<img alt="Dije con un águila de alas extendidas, calada a mano." class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" src="assets/moneda2.jpg" loading="lazy" decoding="async" width="1400" height="1400"/>
-</a>
-<span class="absolute top-3 left-3 pointer-events-none bg-noir-950/85 backdrop-blur-sm text-[10px] text-oro px-2.5 py-1 rounded border border-oro/30 font-medium">Monedas</span>
+<!-- Piece 3: Geometría Ancestral -->
+<article class="gallery-card group bg-noir-850 border border-[#2c2824] rounded-xl overflow-hidden shadow-lg transition-transform duration-300" data-category="madera">
+<div class="relative aspect-square w-full overflow-hidden bg-black/40">
+<img alt="Obra Geometría Ancestral - Artesanía en madera calada" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYFCUmEKXpt6sJ7RSjIqmVN97zpw08lo3ET5MHjRyGkvlFE1K85EyY-4SRCvLhL89gncBrsNJoTpmoqFJlKu5fxSbAyHC1YEHuyfkG9TOI71fNKacWP9M2_N_XtYmChqMy-8DJdJfKmqqxct5GSwc658L7ZVsTjCld9aXtVxkbGRFLPHLGvfIeM93CKEwLS1ci1Fu3yZBqStQV9wXdd9YSmEXsSkTdi9NkW_FoSZAFq0TtFer1-RZ00yhsT92GZpahkg"/>
+<span class="absolute top-3 left-3 bg-noir-950/85 backdrop-blur-sm text-[10px] text-oro px-2.5 py-1 rounded border border-oro/30 font-medium">Madera</span>
 </div>
 <div class="p-4">
-<h3 class="font-serif text-lg font-bold text-white tracking-wide mb-1">Águila calada</h3>
-<p class="text-xs text-[#a39c92]">Dije con un águila de alas extendidas, calada a mano.</p>
+<div class="flex items-start justify-between gap-2 mb-1">
+<h3 class="font-serif text-lg font-bold text-white tracking-wide">Geometría Ancestral</h3>
+<span class="text-xs font-serif text-oro tracking-widest">24h corte</span>
+</div>
+<p class="text-xs text-[#a39c92]">Madera Nogal seleccionado · Patrón circular simétrico · Diámetro 110mm</p>
 </div>
 </article>
-<article class="gallery-card group bg-noir-850 border border-[#2c2824] rounded-xl overflow-hidden shadow-lg transition-transform duration-300" data-category="monedas metal">
-<div class="relative aspect-square w-full overflow-hidden bg-noir-950">
-<a class="block w-full h-full focus-visible:outline focus-visible:outline-2 focus-visible:outline-oro focus-visible:outline-offset-[-2px]" href="assets/moneda3.jpg" target="_blank" rel="noopener noreferrer" aria-label="Ver fotografía completa: Calendario en moneda">
-<img alt="Moneda con motivo de calendario y contorno calado." class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" src="assets/moneda3.jpg" loading="lazy" decoding="async" width="1400" height="1400"/>
-</a>
-<span class="absolute top-3 left-3 pointer-events-none bg-noir-950/85 backdrop-blur-sm text-[10px] text-oro px-2.5 py-1 rounded border border-oro/30 font-medium">Monedas</span>
+<!-- Piece 4: Sol Radiante -->
+<article class="gallery-card group bg-noir-850 border border-[#2c2824] rounded-xl overflow-hidden shadow-lg transition-transform duration-300" data-category="monedas">
+<div class="relative aspect-square w-full overflow-hidden bg-black/40">
+<img alt="Obra Sol Radiante - Dije Calado de Sol de Mayo" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLyZzJY2-hyMoSTz0-gDG4mX4O-DI-BwcDu_4ibtvTRwTiy81AZS8SmM41C7GDoUXh1tn824rlpUJga-uarjwZOzSA19SBK221tMjq247CQP75EWRx5mRF2vlQEADb5w-Qs7vx0klGO0d5ogE4k3Fisa23hBc_5P99N1w62DGJ6jB8dIHI7Re-Iay16Tfve_pjZdukyvpvauUPODLGtExBn2LD7uOwl8hwv83WFG3YarPrDgqjC9CtbhFWmfLWG5pmpA"/>
+<span class="absolute top-3 left-3 bg-noir-950/85 backdrop-blur-sm text-[10px] text-oro px-2.5 py-1 rounded border border-oro/30 font-medium">Monedas</span>
 </div>
 <div class="p-4">
-<h3 class="font-serif text-lg font-bold text-white tracking-wide mb-1">Calendario en moneda</h3>
-<p class="text-xs text-[#a39c92]">Moneda con motivo de calendario y contorno calado.</p>
+<div class="flex items-start justify-between gap-2 mb-1">
+<h3 class="font-serif text-lg font-bold text-white tracking-wide">Sol Radiante</h3>
+<span class="text-xs font-serif text-oro tracking-widest">36h corte</span>
+</div>
+<p class="text-xs text-[#a39c92]">Plata / Cobre · Rayos calados suspendidos al aire · Diámetro 34mm</p>
 </div>
 </article>
-<article class="gallery-card group bg-noir-850 border border-[#2c2824] rounded-xl overflow-hidden shadow-lg transition-transform duration-300" data-category="monedas metal">
-<div class="relative aspect-square w-full overflow-hidden bg-noir-950">
-<a class="block w-full h-full focus-visible:outline focus-visible:outline-2 focus-visible:outline-oro focus-visible:outline-offset-[-2px]" href="assets/moneda5.jpg" target="_blank" rel="noopener noreferrer" aria-label="Ver fotografía completa: Retrato con cadena">
-<img alt="Colgante de moneda con retrato y cadena dorada." class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" src="assets/moneda5.jpg" loading="lazy" decoding="async" width="1400" height="1400"/>
-</a>
-<span class="absolute top-3 left-3 pointer-events-none bg-noir-950/85 backdrop-blur-sm text-[10px] text-oro px-2.5 py-1 rounded border border-oro/30 font-medium">Monedas</span>
+<!-- Piece 5: Águila Imperial -->
+<article class="gallery-card group bg-noir-850 border border-[#2c2824] rounded-xl overflow-hidden shadow-lg transition-transform duration-300" data-category="metal">
+<div class="relative aspect-square w-full overflow-hidden bg-black/40">
+<img alt="Obra Águila Imperial - Moneda Un Peso Mexicano calada" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwo2JUWF0LYlwGc4iU4wYDhLehVgAi5J6AF0CDxmY9qTp5WMv2bw5k2vjuOk-bFvWq4QZe6z1IS2EQ1JLafvXFhME2IflXqElUsW5_DH5TNOvZOLk4uVlX0ELbLnB371MmcQkSGJ0sZ9I3zjgdlw6n3-vcty7SyhbUSOCzFJG5kpUZvK0zoEWk8Xv91PsxSR4J4RxeU-LCLnn0pb0pPkvL5xrGSySDuxY0F1HxTWn766rtaHZ4oUx2NHnQVChD5cFiXQ"/>
+<span class="absolute top-3 left-3 bg-noir-950/85 backdrop-blur-sm text-[10px] text-oro px-2.5 py-1 rounded border border-oro/30 font-medium">Monedas / Metal</span>
 </div>
 <div class="p-4">
-<h3 class="font-serif text-lg font-bold text-white tracking-wide mb-1">Retrato con cadena</h3>
-<p class="text-xs text-[#a39c92]">Colgante de moneda con retrato y cadena dorada.</p>
+<div class="flex items-start justify-between gap-2 mb-1">
+<h3 class="font-serif text-lg font-bold text-white tracking-wide">Águila Imperial</h3>
+<span class="text-xs font-serif text-oro tracking-widest">52h corte</span>
+</div>
+<p class="text-xs text-[#a39c92]">Plata Un Peso Mexicano · Águila y serpiente caladas con greca · Diámetro 39mm</p>
 </div>
 </article>
-<article class="gallery-card group bg-noir-850 border border-[#2c2824] rounded-xl overflow-hidden shadow-lg transition-transform duration-300" data-category="monedas metal">
-<div class="relative aspect-square w-full overflow-hidden bg-noir-950">
-<a class="block w-full h-full focus-visible:outline focus-visible:outline-2 focus-visible:outline-oro focus-visible:outline-offset-[-2px]" href="assets/moneda12.jpeg" target="_blank" rel="noopener noreferrer" aria-label="Ver fotografía completa: Detalle del calado">
-<img alt="Figura de ave calada junto a una moneda sobre fondo oscuro." class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" src="assets/moneda12.jpeg" loading="lazy" decoding="async" width="1400" height="1400"/>
-</a>
-<span class="absolute top-3 left-3 pointer-events-none bg-noir-950/85 backdrop-blur-sm text-[10px] text-oro px-2.5 py-1 rounded border border-oro/30 font-medium">Monedas</span>
-</div>
-<div class="p-4">
-<h3 class="font-serif text-lg font-bold text-white tracking-wide mb-1">Detalle del calado</h3>
-<p class="text-xs text-[#a39c92]">Figura de ave calada junto a una moneda sobre fondo oscuro.</p>
-</div>
-</article>
-<article class="gallery-card group bg-noir-850 border border-[#2c2824] rounded-xl overflow-hidden shadow-lg transition-transform duration-300" data-category="monedas metal">
-<div class="relative aspect-square w-full overflow-hidden bg-noir-950">
-<a class="block w-full h-full focus-visible:outline focus-visible:outline-2 focus-visible:outline-oro focus-visible:outline-offset-[-2px]" href="assets/moneda14.jpg" target="_blank" rel="noopener noreferrer" aria-label="Ver fotografía completa: Monedas y cadena">
-<img alt="Dos dijes de monedas acompañados de una cadena." class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" src="assets/moneda14.jpg" loading="lazy" decoding="async" width="1400" height="1400"/>
-</a>
-<span class="absolute top-3 left-3 pointer-events-none bg-noir-950/85 backdrop-blur-sm text-[10px] text-oro px-2.5 py-1 rounded border border-oro/30 font-medium">Monedas</span>
-</div>
-<div class="p-4">
-<h3 class="font-serif text-lg font-bold text-white tracking-wide mb-1">Monedas y cadena</h3>
-<p class="text-xs text-[#a39c92]">Dos dijes de monedas acompañados de una cadena.</p>
-</div>
-</article>
-<article class="gallery-card group bg-noir-850 border border-[#2c2824] rounded-xl overflow-hidden shadow-lg transition-transform duration-300" data-category="monedas metal">
-<div class="relative aspect-square w-full overflow-hidden bg-noir-950">
-<a class="block w-full h-full focus-visible:outline focus-visible:outline-2 focus-visible:outline-oro focus-visible:outline-offset-[-2px]" href="assets/moneda15.jpg" target="_blank" rel="noopener noreferrer" aria-label="Ver fotografía completa: Retrato bimetálico">
-<img alt="Dije de moneda bimetálica con retrato y cadena dorada." class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" src="assets/moneda15.jpg" loading="lazy" decoding="async" width="1400" height="1400"/>
-</a>
-<span class="absolute top-3 left-3 pointer-events-none bg-noir-950/85 backdrop-blur-sm text-[10px] text-oro px-2.5 py-1 rounded border border-oro/30 font-medium">Monedas</span>
-</div>
-<div class="p-4">
-<h3 class="font-serif text-lg font-bold text-white tracking-wide mb-1">Retrato bimetálico</h3>
-<p class="text-xs text-[#a39c92]">Dije de moneda bimetálica con retrato y cadena dorada.</p>
-</div>
-</article>
-<p class="hidden text-sm text-[#a9a298] py-6 text-center" id="gallery-empty" role="status">Aún no hay fotografías de esta categoría. Consulta por WhatsApp para conocer las piezas disponibles.</p>
 </div>
 </section>
 <!-- END: SectionGallery -->
@@ -604,225 +334,68 @@
 <div class="grid grid-cols-3 gap-2.5 pt-2" data-purpose="artisan-metrics">
 <div class="p-3 rounded-lg bg-noir-900 border border-[#2b2723] text-center">
 <span class="block font-serif text-2xl font-bold text-oro-glow">8+</span>
-<span class="text-[10px] uppercase tracking-wider text-[#9d968d]">Años de oficio</span>
+<span class="text-[10px] uppercase tracking-wider text-[#9
+    body {
+      background-color: #0d0c0b;
+      color: #e2ded9;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      -webkit-font-smoothing: antialiased;
+      selection-background-color: #d4af37;
+      selection-color: #121110;
+    }
+    ::selection {
+      background: #d4af37;
+      color: #121110;
+    }
+  </style>
+<style data-purpose="custom-accents">
+    /* Subtle metallic golden border gradient */
+    .gold-border-gradient {
+      border-image: linear-gradient(to bottom, #d4af37, rgba(212, 175, 55, 0.15)) 1;
+    }
+    /* Delicate ambient gold shadow */
+    .glow-gold {
+      box-shadow: 0 0 25px -4px rgba(212, 175, 55, 0.22);
+    }
+    /* Pattern overlay for artisanal luxury depth */
+    .bg-patron {
+      background-image: radial-gradient(rgba(212, 175, 55, 0.05) 1px, transparent 0);
+      background-size: 20px 20px;
+    }
+  </style>
+</head>
+<body class="bg-noir-950 text-[#e2ded9] flex justify-center min-h-screen">
+<!-- Mobile Wrapper Container (Optimized for iOS / 390px - 430px) -->
+<div class="w-full max-w-[440px] bg-noir-900 border-x border-[#262320] shadow-2xl relative flex flex-col">
+<!-- BEGIN: MainHeader -->
+<header class="sticky top-0 z-50 bg-noir-950/90 backdrop-blur-md border-b border-[#2a2622] px-4 py-3" data-purpose="site-navigation-bar">
+<div class="flex items-center justify-between">
+<!-- Logo Brand Group -->
+<a class="flex items-center gap-2.5 group" href="#inicio">
+<img alt="Emblema Monedas Caladas" class="w-10 h-10 rounded-full object-cover border border-oro/60 shadow-md group-hover:scale-105 transition-transform duration-300" src="assets/portada.jpg"/>
+<div class="flex flex-col">
+<span class="font-serif font-bold text-lg leading-tight tracking-wider text-oro-glow uppercase">Monedas Caladas</span>
+<span class="text-[9px] uppercase tracking-widest text-[#9d968d]">Taller de Calado Fino</span>
 </div>
-<div class="p-3 rounded-lg bg-noir-900 border border-[#2b2723] text-center">
-<span class="block font-serif text-2xl font-bold text-oro-glow">200+</span>
-<span class="text-[10px] uppercase tracking-wider text-[#9d968d]">Piezas cortadas</span>
-</div>
-<div class="p-3 rounded-lg bg-noir-900 border border-[#2b2723] text-center">
-<span class="block font-serif text-2xl font-bold text-oro-glow">1</span>
-<span class="text-[10px] uppercase tracking-wider text-[#9d968d]">Sierra joyero</span>
-</div>
-</div>
-</section>
-<!-- END: SectionArtisan -->
-<!-- BEGIN: SectionQuotesAndContact -->
-<section class="px-5 py-12 border-t border-[#26221e] bg-noir-900" data-purpose="inquiries-and-orders" id="contacto">
-<!-- Section Title -->
-<div class="mb-6">
-<p class="text-[11px] font-semibold tracking-[0.2em] text-oro uppercase mb-1">04 — Cotizaciones</p>
-<h2 class="font-serif text-2xl md:text-3xl font-bold text-white leading-tight">
-            Encarga una pieza única
-          </h2>
-<p class="text-xs text-[#a9a298] mt-2 leading-relaxed">
-            Cuéntame tu idea y el material que tienes en mente. Te responderé con una cotización personalizada, o escríbeme directo por WhatsApp para una conversación inmediata.
-          </p>
-</div>
-<!-- Custom Request Form -->
-<form class="space-y-4 mb-8 bg-noir-850 p-4.5 rounded-xl border border-[#2c2824]" data-purpose="commission-form" onsubmit="event.preventDefault(); alert('Solicitud recibida. Te responderemos a la brevedad.');">
-<!-- 01 Nombre -->
-<div>
-<label class="block text-[11px] font-medium text-[#c5beb5] uppercase tracking-wider mb-1.5" for="cliente-nombre">
-              01 Nombre completo
-            </label>
-<input class="w-full bg-noir-900 border border-[#3b3631] rounded-lg px-3.5 py-2.5 text-xs text-white placeholder-[#686259] focus:outline-none focus:border-oro focus:ring-1 focus:ring-oro" id="cliente-nombre" name="nombre" placeholder="Ej. Francisca Valenzuela" required="" type="text"/>
-</div>
-<!-- 02 Correo -->
-<div>
-<label class="block text-[11px] font-medium text-[#c5beb5] uppercase tracking-wider mb-1.5" for="cliente-correo">
-              02 Correo electrónico
-            </label>
-<input class="w-full bg-noir-900 border border-[#3b3631] rounded-lg px-3.5 py-2.5 text-xs text-white placeholder-[#686259] focus:outline-none focus:border-oro focus:ring-1 focus:ring-oro" id="cliente-correo" name="correo" placeholder="nombre@ejemplo.com" required="" type="email"/>
-</div>
-<!-- 03 Material de Interes -->
-<div>
-<label class="block text-[11px] font-medium text-[#c5beb5] uppercase tracking-wider mb-2">
-              03 Material de interés
-            </label>
-<div class="grid grid-cols-3 gap-2 text-xs">
-<label class="cursor-pointer">
-<input checked="" class="peer sr-only" name="material" type="radio" value="monedas"/>
-<div class="p-2 text-center rounded-lg border border-[#3b3631] peer-checked:border-oro peer-checked:bg-oro/10 peer-checked:text-oro-light text-[#9e968c] transition-colors">
-                  Monedas
-                </div>
-</label>
-<label class="cursor-pointer">
-<input class="peer sr-only" name="material" type="radio" value="madera"/>
-<div class="p-2 text-center rounded-lg border border-[#3b3631] peer-checked:border-oro peer-checked:bg-oro/10 peer-checked:text-oro-light text-[#9e968c] transition-colors">
-                  Madera
-                </div>
-</label>
-<label class="cursor-pointer">
-<input class="peer sr-only" name="material" type="radio" value="metal"/>
-<div class="p-2 text-center rounded-lg border border-[#3b3631] peer-checked:border-oro peer-checked:bg-oro/10 peer-checked:text-oro-light text-[#9e968c] transition-colors">
-                  Metal
-                </div>
-</label>
-</div>
-</div>
-<!-- 04 Rango de Presupuesto -->
-<div>
-<label class="block text-[11px] font-medium text-[#c5beb5] uppercase tracking-wider mb-2">
-              04 Rango de presupuesto estimado
-            </label>
-<div class="grid grid-cols-2 gap-2 text-[11px]">
-<label class="cursor-pointer">
-<input checked="" class="peer sr-only" name="presupuesto" type="radio" value="hasta-100"/>
-<div class="p-2 text-center rounded-md border border-[#3b3631] peer-checked:border-oro peer-checked:bg-oro/10 peer-checked:text-oro-light text-[#9e968c] transition-colors">
-                  Hasta $100
-                </div>
-</label>
-<label class="cursor-pointer">
-<input class="peer sr-only" name="presupuesto" type="radio" value="100-300"/>
-<div class="p-2 text-center rounded-md border border-[#3b3631] peer-checked:border-oro peer-checked:bg-oro/10 peer-checked:text-oro-light text-[#9e968c] transition-colors">
-                  $100 - $300
-                </div>
-</label>
-<label class="cursor-pointer">
-<input class="peer sr-only" name="presupuesto" type="radio" value="300-800"/>
-<div class="p-2 text-center rounded-md border border-[#3b3631] peer-checked:border-oro peer-checked:bg-oro/10 peer-checked:text-oro-light text-[#9e968c] transition-colors">
-                  $300 - $800
-                </div>
-</label>
-<label class="cursor-pointer">
-<input class="peer sr-only" name="presupuesto" type="radio" value="mas-800"/>
-<div class="p-2 text-center rounded-md border border-[#3b3631] peer-checked:border-oro peer-checked:bg-oro/10 peer-checked:text-oro-light text-[#9e968c] transition-colors">
-                  Más de $800
-                </div>
-</label>
-</div>
-</div>
-<!-- 05 Descripción -->
-<div>
-<label class="block text-[11px] font-medium text-[#c5beb5] uppercase tracking-wider mb-1.5" for="cliente-mensaje">
-              05 Descripción de la pieza
-            </label>
-<textarea class="w-full bg-noir-900 border border-[#3b3631] rounded-lg px-3.5 py-2.5 text-xs text-white placeholder-[#686259] focus:outline-none focus:border-oro focus:ring-1 focus:ring-oro" id="cliente-mensaje" name="descripcion" placeholder="Describe el grabado, silueta, año de moneda o detalles de la pieza que imaginas..." required="" rows="3"></textarea>
-</div>
-<!-- Form Submit Button -->
-<button class="w-full py-3 px-4 rounded-lg bg-oro hover:bg-oro-glow text-noir-950 font-semibold text-xs tracking-wider uppercase transition-colors shadow-md active:scale-98" type="submit">
-            Enviar solicitud de cotización
-          </button>
-</form>
-<!-- Direct WhatsApp & Contact Highlight Card -->
-<div class="bg-gradient-to-b from-noir-850 to-noir-950 border border-oro/40 rounded-xl p-4.5 shadow-xl relative overflow-hidden" data-purpose="direct-channel-card">
-<div class="flex items-center gap-2 mb-2">
-<span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-<p class="text-[11px] uppercase tracking-widest text-oro font-semibold">Canal Directo</p>
-</div>
-<h3 class="font-serif text-xl font-bold text-white mb-1.5">
-            Conversa conmigo ahora mismo
-          </h3>
-<p class="text-xs text-[#b8b0a5] leading-relaxed mb-4">
-            Para encargos personalizados, la vía más rápida es WhatsApp. Respondo en el día y coordinamos materiales, diseño y plazos en directo.
-          </p>
-<!-- WhatsApp Primary Button -->
-<a class="flex items-center justify-center gap-2.5 w-full py-3 px-4 rounded-lg bg-[#25D366] hover:bg-[#20ba59] text-noir-950 font-bold text-xs uppercase tracking-wider transition-colors shadow-lg mb-3" href="https://wa.me/56967202358" rel="noopener noreferrer" target="_blank">
-<svg class="w-4 h-4 fill-noir-950" viewbox="0 0 24 24">
+</a>
+<!-- Fast WhatsApp Anchor -->
+<a aria-label="Contactar por WhatsApp" class="flex items-center gap-1.5 px-3 py-2 rounded-full bg-[#25D366] text-noir-950 hover:bg-[#20ba59] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#25D366] transition-colors" href="https://wa.me/56967202358" rel="noopener noreferrer" target="_blank">
+<svg class="w-4 h-4 fill-current" viewbox="0 0 24 24">
 <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"></path>
 </svg>
-<span>WhatsApp · +56 9 6720 2358</span>
+<span class="text-[11px] font-bold">WhatsApp</span>
 </a>
-<!-- Email info link -->
-<div class="text-center">
-<a class="text-xs text-[#a9a298] hover:text-oro-glow transition-colors underline decoration-oro/40 underline-offset-4" href="mailto:monedascaladas78@gmail.com">
-              monedascaladas78@gmail.com
-            </a>
 </div>
-<!-- Trust Badges -->
-<div class="mt-4 pt-3.5 border-t border-[#292521] grid grid-cols-3 gap-1.5 text-center text-[10px] text-[#938c82]">
-<div>
-<span class="block text-oro font-semibold">Respuesta</span>
-<span>En el día</span>
-</div>
-<div>
-<span class="block text-oro font-semibold">Encargos</span>
-<span>Desde 1 pieza</span>
-</div>
-<div>
-<span class="block text-oro font-semibold">Envíos</span>
-<span>A todo el país</span>
-</div>
-</div>
-</div>
-</section>
-<!-- END: SectionQuotesAndContact -->
-</main>
-<!-- END: MainContent -->
-<!-- BEGIN: MainFooter -->
-<footer class="bg-noir-950 border-t border-[#23201d] px-5 py-8" data-purpose="site-footer">
-<div class="flex flex-col items-center text-center">
-<!-- Footer Emblem -->
-<img alt="Monedas Caladas Emblema" class="w-14 h-14 rounded-full border border-oro/50 mb-3 shadow-md" src="assets/portada.jpg"/>
-<h4 class="font-serif text-xl font-bold text-oro-glow tracking-wider uppercase mb-1">Monedas Caladas</h4>
-<p class="text-xs text-[#9d968d] max-w-[280px] leading-relaxed mb-5">
-          Arte de calado fino hecho a mano en monedas, madera y metales. El vacío como forma.
-        </p>
-<!-- Quick Links -->
-<nav class="flex items-center gap-4 text-xs text-[#b8b1a7] mb-6">
-<a class="hover:text-oro transition-colors" href="#inicio">Inicio</a>
-<span>·</span>
-<a class="hover:text-oro transition-colors" href="#galeria">Galería</a>
-<span>·</span>
-<a class="hover:text-oro transition-colors" href="#artesano">Artesano</a>
-<span>·</span>
-<a class="hover:text-oro transition-colors" href="#contacto">Contacto</a>
+<!-- Compact Minimalist Anchor Navigation -->
+<nav aria-label="Menú principal" class="mt-2.5 pt-2 border-t border-[#221f1c] flex items-center justify-between text-[11px] font-medium tracking-wider text-[#9d968d]">
+<a class="hover:text-oro-glow transition-colors" href="#inicio">01 Inicio</a>
+<span class="text-[#3b3631]">·</span>
+<a class="hover:text-oro-glow transition-colors" href="#galeria">02 Galería</a>
+<span class="text-[#3b3631]">·</span>
+<a class="hover:text-oro-glow transition-colors" href="#artesano">03 Artesano</a>
+<span class="text-[#3b3631]">·</span>
+<a class="hover:text-oro-glow transition-colors" href="#contacto">04 Contacto</a>
 </nav>
-<!-- Direct Contact Details -->
-<div class="text-[11px] text-[#817b73] space-y-1 mb-6">
-<p>WhatsApp: <a class="text-oro hover:underline" href="https://wa.me/56967202358">+56 9 6720 2358</a></p>
-<p>Email: <a class="text-oro hover:underline" href="mailto:monedascaladas78@gmail.com">monedascaladas78@gmail.com</a></p>
-</div>
-<!-- Copyright -->
-<p class="text-[10px] text-[#635e58] border-t border-[#1e1b19] pt-4 w-full">
-          © 2026 Monedas Caladas · Hecho a mano · Una hoja a la vez
-        </p>
-</div>
-</footer>
-<!-- END: MainFooter -->
-</div>
-<!-- BEGIN: JavaScriptInteractivity -->
-<script data-purpose="gallery-filter-interaction">
-    function filterGallery(category) {
-      // Update Tab Styles
-      const buttons = document.querySelectorAll('.filter-btn');
-      buttons.forEach(btn => {
-        btn.classList.remove('bg-oro', 'text-noir-950', 'font-semibold');
-        btn.classList.add('bg-noir-850', 'text-[#b5ada3]');
-        btn.setAttribute('aria-pressed', 'false');
-      });
-
-      const selectedBtn = document.getElementById(`tab-${category}`);
-      if (selectedBtn) {
-        selectedBtn.classList.remove('bg-noir-850', 'text-[#b5ada3]');
-        selectedBtn.classList.add('bg-oro', 'text-noir-950', 'font-semibold');
-        selectedBtn.setAttribute('aria-pressed', 'true');
-      }
-
-      // Filter Cards
-      const cards = document.querySelectorAll('.gallery-card');
-      cards.forEach(card => {
-        const itemCat = card.getAttribute('data-category');
-        if (category === 'todos' || itemCat.includes(category)) {
-          card.classList.remove('hidden');
-        } else {
-          card.classList.add('hidden');
-        }
-      });
-      const hasVisibleCards = Array.from(cards).some(card => !card.classList.contains('hidden'));
-      document.getElementById('gallery-empty').classList.toggle('hidden', hasVisibleCards);
-    }
-  </script>
-<!-- END: JavaScriptInteractivity -->
-</body></html>
+</header>
+<!-- END: MainHeader -->
+<!-- BEGIN: MainContent -->
